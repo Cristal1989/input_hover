@@ -1,0 +1,274 @@
+* ul,
+a,
+td {
+  text-align: left;
+  list-style: none;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+body {
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 20px;
+}
+
+
+/*  ========= hover =========== */
+/* смена цвета при наведении */
+.link__hover {
+  color: teal;
+}
+
+.link__hover:hover {
+  color: tomato;
+}
+
+.social__link--hover .link__hover {
+  color: teal;
+}
+
+.social__link--hover .link__hover:hover {
+  color: tomato;
+}
+
+/*  ========= focus =========== */
+/* смена цвета при нажатии */
+.social__link--focus .link__focus {
+  color: teal;
+}
+
+.social__link--focus .link__focus:focus {
+  color: orange;
+}
+
+/* ========== active ======= */
+
+.social__link--active .link__active {
+  color: teal;
+}
+
+.social__link--active .link__active:hover,
+.social__link--active .link__active:focus {
+  color: orange;
+}
+
+.social__link--active .link__active:active {
+  color: blue;
+}
+
+/* =========== :visited ========= */
+/* посещенной ссылки */
+/* работает плохо с разными браузерами */
+
+.social__link--visited .link__visited {
+  color: teal;
+}
+
+.social__link--visited .link__visited:hover,
+.social__link--visited .link__visited:focus {
+  color: orange;
+}
+
+.social__link--visited .link__visited:visited {
+  color: #fff;
+}
+
+/* ========== hover table ========= */
+
+.schedule__body>tr:hover {
+  background-color: tomato;
+  color: #fff;
+}
+
+.shedule {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.shedule th,
+.shedule td {
+  padding: 8px;
+  border: 1px solid #000;
+
+}
+
+/* ===================== */
+/* ========= hover table ========= */
+.auto {
+  cursor: auto;
+}
+
+.default {
+  cursor: default;
+}
+
+.none {
+  cursor: none;
+}
+
+.context-menu {
+  cursor: context-menu;
+}
+
+.help {
+  cursor: help;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.progress {
+  cursor: progress;
+}
+
+.wait {
+  cursor: wait;
+}
+
+.cell {
+  cursor: cell;
+}
+
+.crosshair {
+  cursor: crosshair;
+}
+
+.text {
+  cursor: text;
+}
+
+.vertical-text {
+  cursor: vertical-text;
+}
+
+.alias {
+  cursor: alias;
+}
+
+.copy {
+  cursor: copy;
+}
+
+.move {
+  cursor: move;
+}
+
+.no-drop {
+  cursor: no-drop;
+}
+
+.not-allowed {
+  cursor: not-allowed;
+}
+
+.all-scroll {
+  cursor: all-scroll;
+}
+
+.col-resize {
+  cursor: col-resize;
+}
+
+.row-resize {
+  cursor: row-resize;
+}
+
+.n-resize {
+  cursor: n-resize;
+}
+
+.e-resize {
+  cursor: e-resize;
+}
+
+.s-resize {
+  cursor: s-resize;
+}
+
+.w-resize {
+  cursor: w-resize;
+}
+
+.ns-resize {
+  cursor: ns-resize;
+}
+
+.ew-resize {
+  cursor: ew-resize;
+}
+
+.ne-resize {
+  cursor: ne-resize;
+}
+
+.nw-resize {
+  cursor: nw-resize;
+}
+
+.se-resize {
+  cursor: se-resize;
+}
+
+.sw-resize {
+  cursor: sw-resize;
+}
+
+.nesw-resize {
+  cursor: nesw-resize;
+}
+
+.nwse-resize {
+  cursor: nwse-resize;
+}
+
+
+
+.cursors {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cursors>div {
+  flex: 150px;
+  padding: 10px 2px;
+  white-space: nowrap;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  margin: 0 5px 5px 0;
+}
+
+.cursors>div:hover {
+  background: #eee;
+}
+
+code {
+  display: inline-block;
+  background-color: #eee;
+  padding: 4px 6px;
+  border-radius: 4px;
+  font-size: 32px;
+}
+
+
+/* ============= rgb ============  */
+.font {
+  margin: auto;
+  padding: 50px;
+  text-align: center;
+  background-color: tomato;
+  color: white;
+
+}
+
+
+.font:hover {
+  background-color: rgba(0, 255, 0, 10%);
+  color: tomato;
+}
+
+/* .rgba {
+  color: rgb(0, 50%, 0);
+} */

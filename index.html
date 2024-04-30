@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>input / hover</title>
+    <link rel="stylesheet" href="/CSS/style.css" />
+  </head>
+  <body>
+    <!-- =============== form ===============  -->
+    <h1>form</h1>
+    <!-- get / put - отправить или получить -->
+    <form action="" method="get" enctype="multipart/form-data"></form>
+
+    <!-- input - поле для воода данных  -->
+    <div>
+      <!-- placeholder - текст внутри поля -->
+      <input placeholder="name" type="text" name="username" value="" />
+    </div>
+    <div>
+      <!-- type range - полоска выбора -->
+      <input type="range" name="" id="" value="5" />
+    </div>
+    <div>
+      <!-- type color - выбор цвета -->
+      <input type="color" name="" id="" />
+    </div>
+    <div>
+      <!-- type date - выбор даты YYYY-MM-DD -->
+      <input type="date" value="2018-07-22" />
+    </div>
+    <div>
+      <!-- type time - выбор времени HH:mm:ss -->
+      <input type="time" name="" id="" value="20:23:10" />
+    </div>
+    <div>
+      <!-- type month - выбор месяца YYYY-MM -->
+      <input type="month" name="" id="" value="" />
+    </div>
+    <br />
+    <div>
+      <!-- tel - поле для ввода номера телефона -->
+      <input placeholder="number" type="tel" name="username" value="" />
+    </div>
+    <br />
+    <div>
+      <input placeholder="pass" type="password" name="userpass" />
+    </div>
+    <br />
+
+    <!-- ============== / form =========== -->
+
+    <!-- ============== radio =========== -->
+    <div>
+      <!-- radio - выбор из списка -->
+      <p>
+        <input type="radio" name="beer" value="lagger" />
+        light
+      </p>
+      <p>
+        <!-- checked - выбор по умолчанию -->
+        <input checked type="radio" name="beer" value="dark" />
+        dark
+      </p>
+      <p>
+        <input type="radio" name="beer" value="yelow" />
+        yelow
+      </p>
+      <p>
+        <input type="radio" name="beer" value="green" />
+        green
+      </p>
+    </div>
+
+    <br />
+
+    <div>
+      <p>
+        <input type="radio" name="beer2" value="lagger" />
+        light
+      </p>
+      <p>
+        <input type="radio" name="beer2" value="dark" />
+        dark
+      </p>
+      <p>
+        <input type="radio" name="beer2" value="yelow" />
+        yelow
+      </p>
+      <p>
+        <input checked type="radio" name="beer2" value="green" />
+        green
+      </p>
+    </div>
+    <br />
+    <!-- ================ checkbox ================= -->
+    <div>
+      <!-- checkbox - множественный выбор -->
+      <p>
+        <input type="checkbox" name="car" value="yes" />
+        Наличие авто
+      </p>
+      <p>
+        <input checked type="checkbox" name="car2" value="yes" />
+        Наличие авто 2
+      </p>
+      <p>
+        <input type="checkbox" name="car3" value="yes" />
+        Наличие авто 3
+      </p>
+      <p>
+        <input type="checkbox" name="car4" value="yes" />
+        Наличие авто 4
+      </p>
+    </div>
+    <br />
+
+    <!-- ============ file =========== -->
+    <!-- file - выбор файла и отправка на сервер -->
+    <div>
+      <p>
+        <input type="file" name="foto" />
+      </p>
+    </div>
+    <br />
+
+    <!-- ============= textarea =========== -->
+    <div>
+      <!-- textarea - поле для ввода текста -->
+      <textarea placeholder="text" name="text"></textarea>
+    </div>
+    <br />
+    <!-- ==============  select  ==============-->
+    <div>
+      <!-- select - выбор из всплывающего списка -->
+      <!-- multiple - многочисленный выбор через ctrl -->
+      <select name="color" id="#">
+        <option value="red">red</option>
+        <option selected value="green">green</option>
+        <option value="yelow">yelow</option>
+      </select>
+    </div>
+    <br />
+    <!-- ==============  button  ==============-->
+    <div>
+      <!-- type="submit" - сразу отправка на сервер -->
+      <!-- type="reset" - очистит форму -->
+      <button type="submit">send</button>
+    </div>
+
+    <!-- ==============  hover  ==============-->
+
+    <p>
+      Lorem ipsum dolor sit amet.
+      <a href="#" class="link__hover">по ссылке</a>
+    </p>
+    <ul class="social__link--hover">
+      <li><a href="#" class="link__hover">twitter</a></li>
+      <li><a href="#" class="link__hover">instagram</a></li>
+      <li><a href="#" class="link__hover">facebook</a></li>
+    </ul>
+
+    <!-- ========== focus ======= -->
+    <div>
+      <ul class="social__link--focus">
+        <li><a href="#" class="link__focus">twitter</a></li>
+        <li><a href="#" class="link__focus">instagram</a></li>
+        <li><a href="#" class="link__focus">facebook</a></li>
+      </ul>
+    </div>
+    <br />
+    <!-- ========== active ======= -->
+    <div>
+      <ul class="social__link--active">
+        <li><a href="#" class="link__active">twitter</a></li>
+        <li><a href="#" class="link__active">instagram</a></li>
+        <li><a href="#" class="link__active">facebook</a></li>
+      </ul>
+    </div>
+    <br />
+
+    <!-- ========== :visited ======= -->
+    <div>
+      <ul class="social__link--visited">
+        <li><a class="link__visited" href="https://twitter.com">Twitter</a></li>
+        <li>
+          <a class="link__visited" href="https://www.instagram.com"
+            >Instagram</a
+          >
+        </li>
+        <li>
+          <a class="link__visited" href="https://www.facebook.com">Facebook</a>
+        </li>
+      </ul>
+    </div>
+    <br />
+
+    <!-- ============= hover table ========= -->
+
+    <table class="shedule">
+      <thead>
+        <tr>
+          <th>номер</th>
+          <th>маршрут</th>
+          <th>время</th>
+        </tr>
+      </thead>
+      <tbody class="schedule__body">
+        <tr>
+          <td>433</td>
+          <td>Николаев - Одесса</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>133</td>
+          <td>Одесса - Николаев</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>233</td>
+          <td>Марик - Одессак</td>
+          <td>10</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- ====== cursor ======= -->
+    <h1><code>cursor</code> property values</h1>
+
+    <div class="cursors">
+      <div class="auto">auto</div>
+      <div class="default">default</div>
+      <div class="none">none</div>
+      <div class="context-menu">context-menu</div>
+      <div class="help">help</div>
+      <div class="pointer">pointer</div>
+      <div class="progress">progress</div>
+      <div class="wait">wait</div>
+      <div class="cell">cell</div>
+      <div class="crosshair">crosshair</div>
+      <div class="text">text</div>
+      <div class="vertical-text">vertical-text</div>
+      <div class="alias">alias</div>
+      <div class="copy">copy</div>
+      <div class="move">move</div>
+      <div class="no-drop">no-drop</div>
+      <div class="not-allowed">not-allowed</div>
+      <div class="all-scroll">all-scroll</div>
+      <div class="col-resize">col-resize</div>
+      <div class="row-resize">row-resize</div>
+      <div class="n-resize">n-resize</div>
+      <div class="s-resize">s-resize</div>
+      <div class="e-resize">e-resize</div>
+      <div class="w-resize">w-resize</div>
+      <div class="ns-resize">ns-resize</div>
+      <div class="ew-resize">ew-resize</div>
+      <div class="ne-resize">ne-resize</div>
+      <div class="nw-resize">nw-resize</div>
+      <div class="se-resize">se-resize</div>
+      <div class="sw-resize">sw-resize</div>
+      <div class="nesw-resize">nesw-resize</div>
+      <div class="nwse-resize">nwse-resize</div>
+    </div>
+
+    <!-- ========== rgb ========= -->
+
+    <div class="rgb">
+      <p class="font">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+        architecto rerum fugit illum assumenda aliquam magni, quo quas iusto
+        nihil, inventore recusandae, voluptatibus commodi. Consectetur tenetur
+        sunt laborum obcaecati illum? Odio quae ipsum voluptatum laudantium
+        consectetur vel reprehenderit, recusandae velit accusamus, sit quaerat
+        ipsa similique impedit facere deleniti reiciendis labore.
+      </p>
+    </div>
+    <p class="rgba">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum velit vero
+      quisquam quia odit explicabo labore, maxime laborum sit voluptatem beatae
+      sequi, dolorum nulla, ex reiciendis est saepe voluptates excepturi vel
+      tenetur dolorem quidem officia aut? Eius porro ipsum, eligendi iusto
+      architecto nihil veniam, fugit nisi quis ipsa nulla? Accusamus.
+    </p>
+  </body>
+</html>
